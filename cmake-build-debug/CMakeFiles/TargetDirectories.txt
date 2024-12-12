@@ -1,0 +1,3 @@
+C:/Users/Megumi/Desktop/Alejandro/USAC/2024/Vacaciones Segundo Semestre/Estructura de Datos/Proyecto 1/ [EDD]Proyecto1_202307272/cmake-build-debug/CMakeFiles/__EDD_Proyecto1_202307272.dir
+C:/Users/Megumi/Desktop/Alejandro/USAC/2024/Vacaciones Segundo Semestre/Estructura de Datos/Proyecto 1/ [EDD]Proyecto1_202307272/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Megumi/Desktop/Alejandro/USAC/2024/Vacaciones Segundo Semestre/Estructura de Datos/Proyecto 1/ [EDD]Proyecto1_202307272/cmake-build-debug/CMakeFiles/rebuild_cache.dir
