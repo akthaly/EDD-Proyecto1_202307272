@@ -1,0 +1,10 @@
+digraph AVL {
+    node [shape=circle];
+"Bart" -> "Abi";
+"Abi" -> "Ale";
+"Bart" -> "Mari";
+"Mari" -> "Carmen";
+"Carmen" -> "Ian";
+"Mari" -> "Oscar";
+"Oscar" -> "Zara";
+}

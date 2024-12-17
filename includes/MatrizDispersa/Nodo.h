@@ -16,6 +16,7 @@ public:
         string nomCabecera;
         Usuario* nuevoUsuario;
 
+
         // Punteros
         Nodo *sig;
         Nodo *ant;

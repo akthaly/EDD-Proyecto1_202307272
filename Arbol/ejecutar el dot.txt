@@ -1,0 +1,1 @@
+dot -Tpng arbol_avl.dot -o arbol_avl.png

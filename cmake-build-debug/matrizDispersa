@@ -1,0 +1,14 @@
+digraph MatrizDispersa {
+    rankdir=TB;
+    node [shape=box, style=filled, color=lightblue];
+    "Sac" [label="H: Sac"];
+    "Jutiapa" [label="H: Jutiapa"];
+    "Max" [label="V: Max"];
+    "iShop" [label="V: iShop"];
+    "Sac" -> "Jutiapa";
+    "Max" -> "iShop";
+    "_0x1c12b315ea0" [label="Nodo"];
+    "Sac" -> "_0x1c12b315ea0";
+    "_0x1c12b3160a0" [label="Nodo"];
+    "Jutiapa" -> "_0x1c12b3160a0";
+}

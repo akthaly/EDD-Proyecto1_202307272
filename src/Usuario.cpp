@@ -3,9 +3,12 @@
 //
 
 #include "../includes/Usuario.h"
+#include "../includes/AVL/AVL.h"
+
 using namespace std;
 
-Usuario::Usuario(string nombre, string contraseña) {
+Usuario::Usuario(string username, string nombre, string contraseña) {
+    this->username = username;
     this->nombre = nombre;
     this->contraseña = contraseña;
 }
@@ -13,13 +16,17 @@ Usuario::Usuario(string nombre, string contraseña) {
 Usuario::~Usuario() {
 }
 
-void Usuario::agregarActivo() {
-
+void Usuario::agregarActivo(Activo *activo) {
+    avlActivos.insertarActivo(activo);
+    cout << "Activo agregado exitosamente al usuario " << nombre << ".\n";
 }
 
-void Usuario::eliminarActivo() {
 
+void Usuario::eliminarActivo(string id) {
+    avlActivos.eliminarActivo(id);
+    cout << "Intento de eliminación del activo con ID " << id << " realizado.\n";
 }
+
 
 void Usuario::modificarActivo() {
 
@@ -38,16 +45,15 @@ void Usuario::misActivosRentados() {
 }
 
 // setters y getters
-void Usuario::setNombre(string nombre) {
-    this->nombre = nombre;
-}
 
-void Usuario::setContraseña(string contraseña) {
-    this->contraseña = contraseña;
+string Usuario::getUsername() {
+    return username;
 }
-
 
 string Usuario::getNombre() {
     return nombre;
 }
 
+string Usuario::getContraseña() {
+    return contraseña;
+}

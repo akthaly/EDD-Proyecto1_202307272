@@ -10,4 +10,10 @@ add_executable(__EDD_Proyecto1_202307272 main.cpp
         src/MatrizDispersa/Nodo.cpp
         includes/MatrizDispersa/MatrizDispersa.h
         src/MatrizDispersa/MatrizDispersa.cpp
+        includes/AVL/NodoAVL.h
+        src/AVL/NodoAVL.cpp
+        includes/Activo.h
+        src/Activo.cpp
+        includes/AVL/AVL.h
+        src/AVL/AVL.cpp
 )

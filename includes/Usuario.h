@@ -2,42 +2,42 @@
 // Created by Megumi on 6/12/2024.
 //
 #pragma once
-#include <iostream>
+# include <iostream>
+#include "../includes/AVL/AVL.h"
 using namespace std;
 
 #ifndef USUARIO_H
 #define USUARIO_H
 
-using namespace std;
 
 class Usuario {
 
-    private:
-        // Aquí solo van los atributos
+private:
+    // Aquí solo van los atributos
+    string username;
+    string nombre;
+    string contraseña;
 
-        string nombre;
-        string contraseña;
 
-    public:
-        Usuario(string nombre, string contraseña);
 
-        Usuario();
+public:
+    Usuario(string username, string nombre, string contraseña);
+    AVL avlActivos;
 
-        ~Usuario();
+    ~Usuario();
 
-        //Metodos
-        void agregarActivo();
-        void eliminarActivo();
-        void modificarActivo();
-        void rentarActivo();
-        void activosRentados();
-        void misActivosRentados();
+    //Metodos
+    void agregarActivo(Activo *activo);
+    void eliminarActivo(string id);
+    void modificarActivo();
+    void rentarActivo();
+    void activosRentados();
+    void misActivosRentados();
 
-        // setters y getters
-        void setNombre(string nombre);
-        void setContraseña(string contraseña);
 
-        string getNombre();
+    string getNombre();
+    string getContraseña();
+    string getUsername();
 
 };
 
